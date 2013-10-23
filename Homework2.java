@@ -10,7 +10,6 @@ public class homework2 implements InterSearch {
     	 if(data[first] == what) return first; 
     	    else if(first == last || data[first] ==  data[last]) return -1; 
 
-    	    
     	    int index = first + Math.round((last - first)/(data[last] - data[first])) * (what - data[first]);
     	    
     	    if(data[index] == what) return index;
